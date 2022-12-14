@@ -157,7 +157,7 @@ footer {
     width: 100%;
   }
   body {
-    gap: 2rem;
+    gap: 1.75rem;
   }
   .icon {
     display: none;
@@ -217,5 +217,17 @@ footer {
   .main {
     flex-wrap: nowrap;
     justify-content: space-between;
+  }
+  .left {
+    justify-content: space-between;
+  }
+  .one {
+    padding: 0.75rem;
+  }
+  .right {
+    justify-content: space-between;
+  }
+  .right-box {
+    padding: 1.4rem;
   }
 }
