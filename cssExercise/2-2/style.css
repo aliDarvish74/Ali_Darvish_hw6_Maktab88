@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header,
+section,
+footer {
+  width: 550px;
+}
+
+/**************** header Styles ********************/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+.navigation {
+  display: flex;
+  list-style-type: none;
+  gap: 1px;
+}
+header h4 {
+  padding: 10px 0;
+  color: #6e6e6e;
+}
+.navigation a {
+  display: inline-block;
+  padding: 10px 10px;
+  text-decoration: none;
+  color: rgb(48, 129, 250);
+  border-radius: 5px;
+}
+.navigation a:hover {
+  background-color: rgb(48, 129, 250);
+  color: white;
+}
+
+/**************** header Styles ********************/
+
+/************** topSection styles ******************/
+
+.topSection {
+  text-align: center;
+  background-color: #eee;
+  margin-top: 30px;
+  border-radius: 5px;
+  padding: 30px;
+  color: #2e2e2e;
+}
+.topSection h1 {
+  font-size: 43px;
+  margin: 10px 0 5px 0;
+}
+.topSection p {
+  width: 90%;
+  margin: 5px auto;
+}
+
+.topSection button {
+  background-color: #5db956;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 10px 0 15px 0;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.topSection button:hover {
+  background-color: #10a805;
+  cursor: pointer;
+}
+
+/************** topSection styles ******************/
+
+/************* bottomSection styles ****************/
+
+.bottomSection {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0 10px 0;
+  padding: 15px 15px 30px 15px;
+  color: #2e2e2e;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.bottomSection .subheading {
+  width: 50%;
+  margin: 10px 0;
+}
+.bottomSection .subheading h5 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.bottomSection .subheading p {
+  font-size: 14px;
+}
+
+/************* bottomSection styles ****************/
+
+/***************** footer styles *******************/
+footer {
+  font-size: 12px;
+  color: rgb(117, 117, 117);
+}
+/***************** footer styles *******************/
