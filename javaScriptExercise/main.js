@@ -30,7 +30,7 @@ function raceGame(carCount) {
   cars.sort((a, b) => {
     return a.order - b.order;
   });
-  console.log(`Starting Oreder:`);
+  console.log(`Starting Order:`);
   cars.forEach((el) => {
     console.log(el.carName);
   });
@@ -51,8 +51,7 @@ function raceGame(carCount) {
         cars
           .filter((el) => {
             return (
-              (el.position === cars[i].position) &
-              (el.carName !== cars[i].carName)
+              el.position === cars[i].position && el.carName !== cars[i].carName
             );
           })
           .forEach((comp) => {
@@ -85,6 +84,7 @@ function raceGameRunner() {
 function CarGenerator(inputName) {
   this.carName = inputName;
 }
+
 raceGameRunner();
 
 function randomOrder(inputCarCount) {
