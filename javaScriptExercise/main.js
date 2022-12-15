@@ -1,3 +1,22 @@
+function randomOrder(inputCarCount) {
+  let randomNumbers = [];
+  while (randomNumbers.length < inputCarCount) {
+    let randOrder = parseInt(Math.random() * inputCarCount + 1);
+    if (!randomNumbers.includes(randOrder)) {
+      randomNumbers.push(randOrder);
+    }
+  }
+  return randomNumbers;
+}
+
+function diceArray(inputMax, inputCount) {
+  let diceOrder = [];
+  while (diceOrder.length < inputCount) {
+    diceOrder.push(parseInt(Math.random() * inputMax + 1));
+  }
+  return diceOrder;
+}
+
 function raceGame(carCount) {
   console.log("Welcome to RaceGame!");
   let cars = [];
@@ -86,22 +105,3 @@ function CarGenerator(inputName) {
 }
 
 raceGameRunner();
-
-function randomOrder(inputCarCount) {
-  let randomNumbers = [];
-  while (randomNumbers.length < inputCarCount) {
-    let randOrder = parseInt(Math.random() * inputCarCount + 1);
-    if (!randomNumbers.includes(randOrder)) {
-      randomNumbers.push(randOrder);
-    }
-  }
-  return randomNumbers;
-}
-
-function diceArray(inputMax, inputCount) {
-  let diceOrder = [];
-  while (diceOrder.length < inputCount) {
-    diceOrder.push(parseInt(Math.random() * inputMax + 1));
-  }
-  return diceOrder;
-}
